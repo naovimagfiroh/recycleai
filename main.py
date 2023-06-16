@@ -12,7 +12,7 @@ import jwt
 app = Flask(__name__, template_folder='templates')
 api = Api(app)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:sHDYSacct5hMkfd2gEhx@containers-us-west-171.railway.app:6849/railway"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:boBskeim5CY3Kcqywpto@containers-us-west-28.railway.app:8037/railway"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SQLALCHEMY_ECHO"] = True
 
