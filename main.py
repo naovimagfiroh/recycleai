@@ -70,7 +70,7 @@ class Registration(Resource):
 
             email_token = jwt.encode({"id": user_id}, jwt_secret_key, algorithm="HS256")
 
-            url = f"bustling-bait-production.up.railway.app/user/verify-account/{email_token}"
+            url = f"recycleai-production.up.railway.app/user/verify-account/{email_token}"
 
             data = {
                 'name': name,
@@ -261,7 +261,7 @@ class ForgetPassword(Resource):
 
             email_token = jwt.encode({"id": user[0].id}, jwt_secret_key, algorithm="HS256")
 
-            url = f"bustling-bait-production.up.railway.app/user/reset-password/{email_token}"
+            url = f"recycleai-production.up.railway.app/user/reset-password/{email_token}"
 
             sender = "noreply@app.com"
             msg = Message(subject="Reset your password", sender=sender, recipients=[email])
